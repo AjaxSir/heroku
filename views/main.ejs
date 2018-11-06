@@ -6,7 +6,8 @@
 	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel='stylesheet' href='/stylesheets/main.css' />
 <body>
-<div class="top">
+	<div class="bg">
+		<div class="top">
 	<nav class="navbar navbar-default" role="navigation">
 		<div class="container-fluid"> 
 			<div class="navbar-header">
@@ -28,12 +29,42 @@
 			</div>
 		</div>
 	</nav>
-	<div id='topCon' class="row">
+	<div id='topCon' class="row hidden-xs">
 		<div class='col-xs-3 col-sm-3 col-md-2 topConLeft'>
 			<div class="personOut">
 				<img id='person' src="../images/person.jpg" class="img-responsive" alt="">
 			</div>
 			<h3 style='color: white'>sxl</h3>
+			<h4 class="text-left">jquery:</h4>
+			<div class="progress progress-striped">
+				<div class="progress-bar-success progress-bar" role="progressbar" aria-valuenow="60"
+					 aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+				</div>
+			</div>
+			<h4 class="text-left">css:</h4>
+			<div class="progress progress-striped">
+				<div class="progress-bar-info progress-bar" role="progressbar" aria-valuenow="60"
+					 aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+				</div>
+			</div>
+			<h4 class="text-left">js:</h4>
+			<div class="progress progress-striped">
+				<div class="progress-bar-warning progress-bar" role="progressbar" aria-valuenow="60"
+					 aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+				</div>
+			</div>
+			<h4 class="text-left">vue:</h4>
+			<div class="progress progress-striped">
+				<div class="progress-bar-danger progress-bar" role="progressbar" aria-valuenow="60"
+					 aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+				</div>
+			</div>
+			<h4 class="text-left">webpack:</h4>
+			<div class="progress progress-striped">
+				<div class="progress-bar-danger progress-bar" role="progressbar" aria-valuenow="60"
+					 aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+				</div>
+			</div>
 		</div>
 		<div class='col-xs-9 col-sm-9 col-md-10'>
 			<div class="solid">
@@ -51,12 +82,16 @@
 				<h4>Phone: 13518160587</h4>
 				<h4>Address: 四川省成都市</h4>
 				<h4>Email: 745284215@qq.com</h4>
-			</div>
-			<div class="solid">
-				<h3>github地址</h5>
-				<a href="https://github.com/AjaxSir?tab=repositories">https://github.com/AjaxSir?tab=repositories</a>
+				<h4>github地址: <a target="__black" href="https://github.com/AjaxSir?tab=repositories">https://github.com/AjaxSir?tab=repositories</a></h4>
 			</div>
 		</div>
+	</div>
+	<div class='visible-xs xs-top'>
+		<div class="personOut">
+			<img id='person' src="../images/person.jpg" class="img-responsive" alt="">
+		</div>
+		<h3>sxl</h3>
+		<h3>一个不甘平凡的年轻人!</h3>
 	</div>
 </div>
 <div class="second">
@@ -94,6 +129,8 @@
 		</div>
 	</div>
 </div>
+	</div>
+
 </body>
 	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
 	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>

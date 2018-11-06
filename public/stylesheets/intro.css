@@ -1,0 +1,236 @@
+body{
+	background: url('../images/main-bg.jpg') no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+}
+h2{
+	font-size: 18px;
+	color: white;
+}
+h1{
+	color: white
+}
+span{
+	color: white;
+}
+.font14{
+	font-size: 14px;
+}
+.font28{
+	font-size: 36px;
+}
+.font32{
+		font-size: 38px;
+}
+.asideCon{
+	width: 50px;
+	height: 100%;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	padding: 0px;
+	margin: 0px;
+	background-color: black;
+}
+.asideCon ul{
+	padding: 0px;
+	margin: 0px;
+	padding-top: 150px;
+}
+.asideCon ul li{
+	float: none;
+	display: block;
+	margin-bottom: 30px;
+	text-align: center;
+}
+.asideCon ul li i{
+	font-size: 24px;
+	color: white;
+}
+.asideCon ul li .active{
+	color: #e84d49;
+}
+.asideCon ul li:hover{
+	cursor: pointer;
+}
+.asideCon ul li:hover i{
+	color: #e84d49;
+}
+.header{
+	padding-top: 100px;
+}
+
+
+.headerCon{
+	height: auto;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.headerCon h3{
+	float: left;
+}
+
+.contact{
+	margin-top: 30px;
+	width: 180px;
+	float: right;
+	list-style: none;
+}
+.contact li{
+	float: left;
+	margin-left: 25px;
+}
+.contact li i {
+	font-size: 16px;
+	color: white;
+}
+.contact li i:hover{
+	color: #e84d49;
+	cursor: pointer;
+}
+.zym{
+	margin: 80px 0px;
+}
+.hope{
+	margin: 40px 0px;
+}
+.text-left{
+	font-size: 28px;
+	color: white;
+	margin: 20px 0px;
+}
+.linkMe{
+	color: white;
+	font-size: 24px;
+}
+@media screen and (min-width: 1200px) {
+	.headerCon{
+		width: 1100px;
+		padding:0px 60px;
+	}
+}
+@media (max-width: 1199px) and (min-width: 992px) {
+	.headerCon{
+		width: 970px;
+	}
+	.font28{
+		font-size: 28px;
+	}
+	.font32{
+		font-size: 30px;
+	}
+	.headerCon{
+		width: 900px;
+		padding:0px 60px;
+	}
+	
+}
+@media (max-width: 991px) and (min-width: 768px) {
+	.headerCon{
+		width: 750px;
+		padding:0px 50px;
+	}
+	.font28{
+		font-size: 24px;
+	}
+	.font32{
+		font-size: 26px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.linkMe{
+		font-size: 16px;
+	}
+	.text-left{
+		font-size: 16px;
+		color: white;
+		margin: 10px 0px;
+	}
+	.font28{
+		font-size: 18px;
+	}
+	.font32{
+		font-size: 14px;
+	}
+	h1{
+		font-size: 16px;
+	}
+	.headerCon{
+		text-align: center;
+		padding:0px 45px;
+	}
+	.headerCon h3{
+		float: none;
+		display: inline-block;
+	}
+	.contact{
+		width: 150px;
+		padding: 0px;
+		float: none;
+		margin: 0 auto;
+		display:block;
+	}
+	.asideCon{
+		width: 35px;
+	}
+	.asideCon ul{
+		padding-top: 100px;
+	}
+	.zym{
+		margin: 20px 0px;
+	}
+	.hope{
+		margin: 20px 0px;
+	}
+}
+#typed{
+	background-color: #e84d49;
+	color: white;
+}
+#line{
+	font-size: 20px;
+	animation:opac .5s infinite;
+}
+@keyframes opac {
+	from { opacity: 0 }
+	to { opacity: 1 }
+}
+.cir{
+	margin-top: 30px;
+	margin-left: 50px;
+}
+.cir,.imgCon{
+	border-radius: 50%;
+	overflow: hidden;
+	background-color: white;
+	width: 200px;
+	height: 200px;
+	position: relative;
+}
+.imgCon{
+	/*height: 120px;*/
+	bottom: 0px;
+	text-align: center;
+	padding-top: 80px;
+	line-height: 20px;
+	left: 200px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	transition: .5s;
+	background:rgba(0,0,0, .5);
+	color: white;
+	position: absolute;
+}
+.cir img{
+	width: 200px;
+	height: 240px;
+}
+.cir:hover .imgCon{
+	left: 0px;
+	cursor: pointer;
+}
+
+.AboutMe{
+	margin-top: 20px;
+	text-align: center;
+}

@@ -8,7 +8,7 @@
 		}
 	}
 	function backWidHei() {
-		$('.top').css({'height': getScreenConfig().h})
+		$('.bg').css({'height': getScreenConfig().h})
 	}
 	backWidHei();
 	$(window).resize(function() {
