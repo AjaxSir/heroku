@@ -8,8 +8,11 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var mainRouter = require('./routes/main');
 var introRouter = require('./routes/intro');
+var error = require('./routers/error')
 
 // var favicon = require('serve-favicon');
+
+var intro = require('./webRequest/introReq.js');
 
 var app = express();
 
@@ -34,6 +37,10 @@ app.use('/', introRouter);
 app.use('/users', usersRouter);
 app.use('/main', mainRouter);
 app.use('/intro', introRouter);
+app.use('*', error);
+
+
+app.get('/getIntro.do', intro.inf)
 
 
 // catch 404 and forward to error handler

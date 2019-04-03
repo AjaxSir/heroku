@@ -56,4 +56,14 @@
 		$('.headerCon').hide();
 		$('#contactMe').fadeIn();
 	})
+	function aj() {
+		$.ajax({
+		url: '/getIntro.do',
+		type: 'get',
+		success: function(data) {
+			console.log(data);
+		}
+		})
+	}
+	aj()
 }())
